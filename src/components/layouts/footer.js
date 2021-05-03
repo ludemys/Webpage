@@ -8,9 +8,9 @@ class Footer extends Component
         return(
             <footer className="footer">
                 
-                <List title="Sections" show="navbar" />
-                <List title="Projects" show="projects" />
-                <List title="Contact" show="contact" />
+                <List title="Sections" render="navbar" />
+                <List title="Projects" render="projects" />
+                <List title="Contact" render="contact" />
 
             </footer>
         )

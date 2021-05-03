@@ -1,0 +1,16 @@
+.list .list-header {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.list {
+    list-style-type: none;
+    line-height: 1.5em;
+
+    text-align: center;
+    max-width: max-content;
+}
+
+.list-style-type-circle {
+    list-style-type: disc;
+}

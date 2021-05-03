@@ -6,16 +6,16 @@ class List extends Component
     state = 
     {
         title: this.props.title,
-        show: this.props.show
+        render: this.props.render
     }
 
     render = () =>
     {
-        switch (this.state.show) {
+        switch (this.state.render) {
             case 'navbar':
                 return (
                     <ul className="list">
-                        {this.state.title ? <li>{this.state.title}</li> : ''}
+                        {this.state.title ? <li className="item list-header">{this.state.title}</li> : ''}
                         <NavItems />
                     </ul>
                 )

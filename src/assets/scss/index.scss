@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+@import './components/reset';
 
 * {
     font-size: 16px;
     font-family: "Roboto", "Montserrat", "Open Sans", sans-serif;
-
     margin: 0;
     padding: 0;
 
     color: #eee;
 }
 
-@import 'components/reset';
-@import 'components/layouts/container';
-@import 'components/layouts/header';
-@import 'components/layouts/main';
-@import 'components/layouts/footer';
-@import 'components/link';
-@import 'components/list';
+@import './components/layouts/container';
+@import './components/layouts/header';
+@import './components/layouts/main';
+@import './components/layouts/footer';
+@import './components/link';
+@import './components/list';
