@@ -19,6 +19,25 @@ class List extends Component
                         <NavItems />
                     </ul>
                 )
+            case 'projects':
+                return (
+                    <ul className="list">
+                        {this.state.title ? <li className="item list-header">{this.state.title}</li> : ''}
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                )
+            case 'contact':
+                return (
+                    <ul className="list">
+                        {this.state.title ? <li className="item list-header">{this.state.title}</li> : ''}
+                        <li className="item"><a className="link image-link" target="_blank" href="https://www.github.com/ludemys"><img className="footer-logo" src="./assets/github.png"/>Github</a></li>
+                        <li className="item"><a className="link image-link" target="_blank" href="https://www.twitter.com/ludemys"><img className="footer-logo" src="./assets/twitter.png"/>Twitter</a></li>
+                    </ul>
+                )
         
             default:
             {

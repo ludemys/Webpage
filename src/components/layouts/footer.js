@@ -9,7 +9,7 @@ class Footer extends Component
             <footer className="footer">
                 
                 <List title="Sections" render="navbar" />
-                <List title="Projects" render="projects" />
+                <List title="Some projects" render="projects" />
                 <List title="Contact" render="contact" />
 
             </footer>

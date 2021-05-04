@@ -2,6 +2,6 @@
     min-height: 100vh;
 
     display: grid;
-    grid-template-rows: .4fr 5fr 1.5fr;
+    grid-template-rows: 4rem 5fr 15rem;
     grid-template-areas: "header""main""footer";
 }

@@ -10,6 +10,10 @@
     color: #eee;
 }
 
+body {
+    background-color: #222;
+}
+
 @import './components/layouts/container';
 @import './components/layouts/header';
 @import './components/layouts/main';
