@@ -9,8 +9,9 @@ class Footer extends Component
             <footer className="footer">
                 
                 <List title="Sections" render="navbar" />
-                <List title="Some projects" render="projects" />
+                {/* <List title="Some projects" render="projects" /> */}
                 <List title="Contact" render="contact" />
+                <p className="copyright">{`Luciano Della Savia | ${new Date().getFullYear()}© | All rights reserved`}</p>
 
             </footer>
         )

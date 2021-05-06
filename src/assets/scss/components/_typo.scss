@@ -1,0 +1,40 @@
+.title,
+.subtitle {
+    animation: load-title 1s ease;
+}
+
+.title {
+    font-family: "Fredoka One", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    line-height: 5rem;
+
+    letter-spacing: .5em;
+
+    max-width: max-content;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Itim';
+    letter-spacing: .2em;
+}
+
+.main-title {
+    font-size: 5em;
+}
+
+.sd-title {
+    font-size: 4em;
+}
+
+.td-title {
+    font-size: 3em;
+}
+
+.foth-title {
+    font-size: 2em;
+}
+
+.fith-title {
+    font-size: 1.75em;
+}

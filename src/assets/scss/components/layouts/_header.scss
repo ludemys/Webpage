@@ -1,5 +1,11 @@
 .header {
-    background-color: #111;
+    grid-area: header;
+
+    box-shadow: 0 0 10px var(--secondary);
+
+    background-color: var(--secondary-lil-op);
+
+    animation: load 1s ease;
 }
 
 

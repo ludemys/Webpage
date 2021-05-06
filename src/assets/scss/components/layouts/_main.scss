@@ -1,0 +1,141 @@
+.main {
+    grid-area: main;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;
+
+    /* -------------*/
+    /* ----INDEX----*/
+    /* -------------*/
+
+    .main-title {
+        padding: 0 1em;
+    }
+
+    .lil-description {
+        margin: 3em 0;
+        line-height: 4em;
+        padding: 1em 0;
+        width: 50%;
+        text-align: center;
+
+        border-top: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
+        border-radius: 2em;
+    }
+
+    .list {
+        display: flex;
+        max-width: none;
+        width: 30%;
+        justify-content: space-around;
+
+        .item {
+            padding: 0 1em;
+
+            &:hover {
+                box-shadow: 0 -1px var(--primary) inset;
+            }
+
+            &:active {
+                transform: translateY(3px);
+            }
+        }
+    }
+
+    /* -------------*/
+    /* --PORTFOLIO--*/
+    /* -------------*/
+
+
+    .portfolio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+
+        .portfolio-presentation {
+            text-align: center;
+
+            line-height: 3.5em;
+
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--secondary);
+
+            .paragraph {
+                letter-spacing: .3em;
+            }
+        }
+
+        .github-link {
+            padding: 2em;
+            margin-right: 1em;
+
+            background-color: var(--secondary);
+            border-radius: 1em;
+            box-shadow: 0 0 5px 2px var(--secondary);
+
+            transition: .3s ease-in-out;
+
+            .github-card {
+
+                display: flex;
+                align-items: center;
+
+                .github-profile {
+                    width: 13em;
+                    height: 13em;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px 2px var(--secondary);
+
+                    margin-left: 2em;
+
+                    transition: .3s ease;
+                }
+
+                .github-data {
+                    align-self: stretch;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .line {
+                        width: 60%;
+                    }
+                }
+            }
+
+
+            &:hover {
+                background: var(--primary-much-op);
+
+                .github-card .github-data {
+                    --primary: var(--secondary);
+                }
+
+                .github-profile {
+                    transform: scale(.9);
+                }
+            }
+        }
+    }
+
+
+
+    .lil-description,
+    .list,
+    .github-data {
+        animation: load-title 1s ease;
+    }
+
+    .github-link {
+        animation: load 1s ease;
+    }
+}

@@ -1,14 +1,27 @@
 .list .list-header {
     text-decoration: underline;
     font-size: 1.2em;
+    margin-bottom: .2em;
 }
 
 .list {
     list-style-type: none;
-    line-height: 1.5em;
+    max-width: max-content;
 
     text-align: center;
-    max-width: max-content;
+
+    .item {
+        transition: .2s;
+
+        &:hover {
+            text-shadow: 0 0 3px var(--primary);
+        }
+    }
+}
+
+.list .list-header,
+.list .item {
+    line-height: 1.5em;
 }
 
 .list-style-type-circle {

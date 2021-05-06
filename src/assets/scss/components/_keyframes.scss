@@ -1,0 +1,23 @@
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes load-title {
+    0% {
+        opacity: 0;
+        transform: translateY(-1em) scaleY(1.3);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
