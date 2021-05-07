@@ -49,6 +49,29 @@
     }
 
     /* -------------*/
+    /* ------ME-----*/
+    /* -------------*/
+
+    .profile-image {
+        border-radius: 20px;
+        box-shadow: 0 0 2px 3px var(--primary);
+
+        margin: 1em 0 2em 0;
+
+        width: 30em;
+    }
+
+    .description {
+        max-width: 50%;
+
+        .paragraph {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+
+
+    /* -------------*/
     /* --PORTFOLIO--*/
     /* -------------*/
 
@@ -65,7 +88,7 @@
             line-height: 3.5em;
 
             font-weight: bold;
-            text-shadow: 0 0 10px var(--secondary);
+            // text-shadow: 0 0 10px var(--secondary);
 
             .paragraph {
                 letter-spacing: .3em;
@@ -135,7 +158,8 @@
         animation: load-title 1s ease;
     }
 
-    .github-link {
+    .github-link,
+    .image {
         animation: load 1s ease;
     }
 }

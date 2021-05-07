@@ -1,5 +1,7 @@
 .title,
 .subtitle {
+    text-shadow: 0 0 10px var(--secondary);
+
     animation: load-title 1s ease;
 }
 
