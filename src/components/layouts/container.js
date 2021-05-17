@@ -10,7 +10,7 @@ class Container extends Component
         return(
             <div className="container" id="container">
                 <Header />
-                <Main content={this.props.content} />
+                <Main content={this.props.content} title={this.props.title} />
                 <Footer />
             </div>
         )

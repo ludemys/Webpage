@@ -34,8 +34,26 @@ class List extends Component
                 return (
                     <ul className="list">
                         {this.state.title ? <li className="list-header">{this.state.title}</li> : ''}
-                        <li className="item"><a className="link image-link" target="_blank" href="https://www.github.com/ludemys"><img className="footer-logo" src="./assets/github.png"/>Github</a></li>
-                        <li className="item"><a className="link image-link" target="_blank" href="https://www.twitter.com/ludemys"><img className="footer-logo" src="./assets/twitter.png"/>Twitter</a></li>
+                        <li className="item">
+                            <a className="link image-link" target="_blank" href="https://www.github.com/ludemys">
+                                <img className="footer-logo" src="./assets/github.png"/>
+                                Github
+                            </a>
+                        </li>
+
+                        <li className="item">
+                            <a className="link image-link" target="_blank" href="https://www.linkedin.com/in/lucianodellasavia">
+                                <img className="footer-logo" src="https://image.flaticon.com/icons/png/512/174/174857.png"/>
+                                LinkedIn
+                            </a>
+                        </li>
+                        
+                        <li className="item">
+                            <a className="link image-link" target="_blank" href="https://www.twitter.com/ludemys">
+                                <img className="footer-logo" src="./assets/twitter.png"/>
+                                Twitter
+                            </a>
+                        </li>
                     </ul>
                 )
         

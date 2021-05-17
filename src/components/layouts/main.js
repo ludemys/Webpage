@@ -1,17 +1,22 @@
 import React, {Component, Fragment} from 'react'
+
 import Home from '../home'
 import Me from '../me'
 import Portfolio from '../portfolio'
+import Goals from '../goals'
 
 class Main extends Component
 {
     state = 
     {
-        content: this.props.content
+        content: this.props.content,
+        title: this.props.title ?? 'Luciano Della Savia, software developer specialized on web'
     }
 
     render = () =>
     {
+        document.title = this.state.title
+
         switch(this.state.content)
         {
             default: 
@@ -38,7 +43,7 @@ class Main extends Component
             case 'goals':
                 return (
                     <main className="main">
-
+                        <Goals />
                     </main>
                 )
 

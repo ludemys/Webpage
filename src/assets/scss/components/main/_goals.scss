@@ -1,1 +1,38 @@
-.main {}
+.main {
+    .goals {
+        .todo-item {
+            display: flex;
+
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .paragraph {
+                width: 25rem;
+                font-size: 1.4em;
+                line-height: 1.75em;
+            }
+
+            .image {
+                max-width: 30em;
+
+                border-radius: 1rem;
+            }
+
+            .checked {
+                background-color: #00ff00;
+                color: #333;
+                padding: .2rem;
+                border-radius: 3px;
+
+                margin-left: .5em;
+            }
+        }
+
+        .line {
+            margin: 2em 0;
+        }
+
+        margin: 5em 0;
+    }
+}
