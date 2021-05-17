@@ -1,0 +1,75 @@
+.main {
+    .portfolio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+
+        .portfolio-presentation {
+            text-align: center;
+
+            line-height: 3.5em;
+
+            font-weight: bold;
+            // text-shadow: 0 0 10px var(--secondary);
+
+            .paragraph {
+                letter-spacing: .3em;
+            }
+        }
+
+        .github-link {
+            padding: 2em;
+            margin-right: 1em;
+
+            background-color: var(--secondary);
+            border-radius: 1em;
+            box-shadow: 0 0 5px 2px var(--secondary);
+
+            transition: .3s ease-in-out;
+
+            .github-card {
+
+                display: flex;
+                align-items: center;
+
+                .github-profile {
+                    width: 13em;
+                    height: 13em;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px 2px var(--secondary);
+
+                    margin-left: 2em;
+
+                    transition: .3s ease;
+                }
+
+                .github-data {
+                    align-self: stretch;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .line {
+                        width: 60%;
+                    }
+                }
+            }
+
+
+            &:hover {
+                background: var(--primary-much-op);
+
+                .github-card .github-data {
+                    --primary: var(--secondary);
+                }
+
+                .github-profile {
+                    transform: scale(.9);
+                }
+            }
+        }
+    }
+}

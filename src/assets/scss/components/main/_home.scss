@@ -1,0 +1,36 @@
+.main {
+    .main-title {
+        padding: 0 1em;
+    }
+
+    .lil-description {
+        margin: 3em 0;
+        line-height: 4em;
+        padding: 1em 0;
+        width: 50%;
+        text-align: center;
+
+        border-top: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
+        border-radius: 2em;
+    }
+
+    .list {
+        display: flex;
+        max-width: none;
+        width: 30%;
+        justify-content: space-around;
+
+        .item {
+            padding: 0 1em;
+
+            &:hover {
+                box-shadow: 0 -1px var(--primary) inset;
+            }
+
+            &:active {
+                transform: translateY(3px);
+            }
+        }
+    }
+}

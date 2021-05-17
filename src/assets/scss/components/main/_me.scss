@@ -1,0 +1,24 @@
+.main {
+    .profile-image {
+        border-radius: 20px;
+        box-shadow: 0 0 2px 3px var(--primary);
+
+        margin: 1em 0 2em 0;
+
+        width: 30em;
+    }
+
+    .description {
+        max-width: 50%;
+
+        .paragraph {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+
+            text-shadow: 0 0 10px var(--secondary);
+
+        }
+    }
+
+    line-height: 2em;
+}
