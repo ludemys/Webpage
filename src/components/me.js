@@ -6,7 +6,7 @@ class Me extends Component
     {
         return <Fragment>
             <h1 className="title td-title">Who is Luciano?</h1>
-            <img className="image profile-image" src="./assets/profile.jpg" />
+            <img className="image profile-image" src="./assets/profile.jpg" alt="Luciano profile image" />
             <article className="description">
                 <p className="paragraph">Luciano was born in Argentina in 2003, and since he was very little he showed fascination about his father' computer, a windows xp. </p>
                 <p className="paragraph">He wouldn't start programming until fifteen, but he already knew since he was twelve years old that what he wanted to do was something related to computers. First dream was being an ESports player, later it was being a dj, but those dreams disapeared when he found what programming was from a conversation about VBA with her uncle.</p>

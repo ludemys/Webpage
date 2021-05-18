@@ -19,7 +19,7 @@ class Goals extends Component
                 <hr className="line" />
 
                 <div className="todo-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" className="image" alt="laravel 8logo" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" className="image" alt="laravel 8 logo" />
 
                     <p className="paragraph">Learn Laravel 8 as my main back-end framework <i class="checked far fa-check-square"></i></p>
                 </div>

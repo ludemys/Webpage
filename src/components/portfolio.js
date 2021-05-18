@@ -20,7 +20,7 @@ class Portfolio extends Component
                             <hr className="line" />
                             <p className="paragraph">GitHub for professional portfolio</p>
                         </div>
-                        <img className="github-profile" src="https://avatars.githubusercontent.com/u/52580686?v=4" />
+                        <img className="github-profile" src="https://avatars.githubusercontent.com/u/52580686?v=4" alt="github profile image" />
                     
                     </article>
                 </a>

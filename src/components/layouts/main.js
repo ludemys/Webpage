@@ -4,6 +4,7 @@ import Home from '../home'
 import Me from '../me'
 import Portfolio from '../portfolio'
 import Goals from '../goals'
+import Contact from '../contact'
 
 class Main extends Component
 {
@@ -50,7 +51,7 @@ class Main extends Component
             case 'contact':
                 return (
                     <main className="main">
-
+                        <Contact />
                     </main>
                 )
         }
