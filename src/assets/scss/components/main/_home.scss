@@ -1,6 +1,7 @@
 .main {
     .main-title {
         padding: 0 1em;
+        margin-bottom: .5em;
     }
 
     .lil-description {
@@ -15,7 +16,7 @@
         border-radius: 2em;
     }
 
-    .list {
+    .list-home {
         display: flex;
         max-width: none;
         width: 30%;

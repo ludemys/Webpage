@@ -5,6 +5,8 @@
         align-items: center;
         width: 75%;
 
+        margin-bottom: 5em;
+
         .portfolio-presentation {
             text-align: center;
 
@@ -21,6 +23,8 @@
         .github-link {
             padding: 2em;
             margin-right: 1em;
+            margin-left: 1em;
+            text-align: center;
 
             background-color: var(--secondary);
             border-radius: 1em;
@@ -39,7 +43,7 @@
                     border-radius: 50%;
                     box-shadow: 0 0 5px 2px var(--secondary);
 
-                    margin-left: 2em;
+                    margin: 2em;
 
                     transition: .3s ease;
                 }

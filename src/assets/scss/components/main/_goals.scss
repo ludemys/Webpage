@@ -2,8 +2,6 @@
     .goals {
         .todo-item {
             display: flex;
-
-            flex-direction: row;
             justify-content: space-between;
             align-items: center;
 
@@ -27,6 +25,13 @@
 
                 margin-left: .5em;
             }
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            padding: 2em 0;
+            border-bottom: 1px solid var(--primary);
         }
 
         .line {
@@ -34,5 +39,7 @@
         }
 
         margin: 5em 0;
+
+
     }
 }

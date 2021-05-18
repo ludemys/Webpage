@@ -1,16 +1,13 @@
-import React, {Component, Fragment} from 'react'
+import React, {Fragment} from 'react'
 import List from './list'
 
-class Contact extends Component
+const Contact = () =>
 {
-    render = () =>
-    {
-        return <Fragment>
+    return (
+        <Fragment>
             <h2 className="subtitle sd-title contact-title">How to contact me</h2>
 
             <div className="contact-row">
-
-                {/* <a target="_blank" className="link" href="https://www.twitter.com/ludemys"><img className="image-logo" src="./assets/twitter.png" /></a> */}
 
                 <p className="paragraph">
                     If you want to talk with me, I recommend you to send me a 
@@ -18,22 +15,26 @@ class Contact extends Component
                         {
                             text: 'Twitter DM',
                             href: 'https://www.twitter.com/messages/compose?recipient_id=3805104374',
-                            imageSrc: './assets/twitter.png'
+                            imageSrc: './assets/twitter.png',
+                            alt: 'twitter logo'
                         },
                         {
                             text: 'Tweet tagging me with @ludemys',
                             href: 'https://www.twitter.com/ludemys',
-                            imageSrc: './assets/twitter.png'
+                            imageSrc: './assets/twitter.png',
+                            alt: 'twitter logo'
                         },
                         {
                             text: 'Email',
                             href: 'mailto:lucianodellasavia@gmail.com',
-                            imageSrc: 'https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63'
+                            imageSrc: 'https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63',
+                            alt: 'gmail logo'
                         },
                         {
                             text: 'LinkedIn DM',
                             href: 'https://www.linkedin.com/in/lucianodellasavia',
-                            imageSrc: 'https://bio-ingenieria.com/wp-content/uploads/2019/11/linkedin-logo-1.png'
+                            imageSrc: 'https://bio-ingenieria.com/wp-content/uploads/2019/11/linkedin-logo-1.png',
+                            alt: 'linkedin logo'
                         }
                     ]} />
                 </p>
@@ -46,8 +47,7 @@ class Contact extends Component
                 </p>
             </div>
         </Fragment>
-            
-    }
+    )
 }
 
 export default Contact

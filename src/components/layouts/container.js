@@ -1,20 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Header from './header'
 import Main from './main'
 import Footer from './footer'
 
-class Container extends Component
+const Container = (props) =>
 {
-    render = () =>
-    {
-        return(
-            <div className="container" id="container">
-                <Header />
-                <Main content={this.props.content} title={this.props.title} />
-                <Footer />
-            </div>
-        )
-    }
+    return(
+        <div className="container" id="container">
+            <Header />
+            <Main content={props.content} title={props.title} />
+            <Footer />
+        </div>
+    )
 }
 
 export default Container

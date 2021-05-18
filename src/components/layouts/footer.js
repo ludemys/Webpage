@@ -1,20 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react'
 import List from '../list'
 
-class Footer extends Component
+const Footer = () =>
 {
-    render = () =>
-    {
-        return(
-            <footer className="footer">
-                
-                <List title="Sections" render="navbar" />
-                <List title="Contact" render="contact" />
-                <p className="copyright">{`Luciano Della Savia | ${new Date().getFullYear()}© | All rights reserved`}</p>
+    return(
+        <footer className="footer">
+            
+            <List title="Sections" render="navbar" />
+            <List title="Contact" render="contact" />
+            <p className="copyright">{`Luciano Della Savia | ${new Date().getFullYear()}© | All rights reserved`}</p>
 
-            </footer>
-        )
-    }
+        </footer>
+    )
 }
 
 export default Footer

@@ -1,0 +1,192 @@
+@media screen and (max-width: 1451px) {
+    .github-card {
+        flex-direction: column;
+
+        .foth-title {
+            font-size: 1.5em;
+        }
+
+        .github-profile {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main {
+        .description {
+            max-width: 90%;
+        }
+
+        .portfolio {
+            width: 100%;
+
+            .portfolio-presentation {
+                margin-bottom: 2em;
+            }
+
+            .github-link {
+                // margin-left: 0;
+            }
+        }
+
+        .goals {
+            .image {
+                width: 15em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .main {
+        .github-card {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .title {
+        letter-spacing: .2em;
+    }
+
+    .main-title {
+        font-size: 3.5em;
+    }
+
+    .sd-title {
+        font-size: 3em;
+    }
+
+    .td-title {
+        font-size: 2em;
+    }
+
+    .foth-title {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .portfolio {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .main {
+        .contact-row {
+            margin-bottom: 2em;
+
+            .paragraph {
+                font-size: .8em;
+            }
+
+            .paragraph-with-links {
+                max-width: 60%;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+
+                .inline-link {
+                    text-decoration: none;
+                    border-radius: 10px;
+                    box-shadow: 0 0 2px var(--primary);
+                    padding: 1em;
+
+                    &:hover {
+                        background-color: var(--primary-much-op);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .main {
+        .goals {
+            .subtitle {
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0 0 2px var(--primary);
+                line-height: 2em;
+                padding: .5em 0;
+            }
+
+            .todo-item {
+                .paragraph {
+                    margin-bottom: 1em;
+                }
+
+                flex-direction: column;
+
+                &:nth-child(even) {
+                    flex-direction: column;
+                }
+
+                .image {
+                    width: 12em;
+                }
+
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 635px) {
+    body {
+        font-size: 12px;
+    }
+
+    .list-home {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .item {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main .description {
+        line-height: 1.75em;
+
+        .paragraph {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .main {
+        .portfolio {
+            max-width: 70%;
+
+            .portfolio-presentation {
+                line-height: 5rem;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+
+//Fix iPad-only style
+@media screen and (width: 768px) and (height: 1024px) {
+    .container {
+        grid-template-rows: 4rem 5fr 20rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+}

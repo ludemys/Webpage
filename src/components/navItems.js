@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import { Redirect, useHistory } from 'react-router'
+import { Redirect } from 'react-router'
 
 // let path = useHistory()
 // path = path.location.pathname
@@ -36,11 +36,11 @@ class NavItems extends Component
 
         return (
             <Fragment>
-                <li className='item' key="0"><a onClick={() => this.handleClick(1)} className="link">Home</a></li>
-                <li className='item' key="1"><a onClick={() => this.handleClick(2)} className="link">Who I am</a></li>
-                <li className='item' key="2"><a onClick={() => this.handleClick(3)} className="link">Portfolio</a></li>
-                <li className='item' key="3"><a onClick={() => this.handleClick(4)} className="link">Goals</a></li>
-                <li className='item' key="4"><a onClick={() => this.handleClick(5)} className="link">Contact</a></li>
+                <li className='item' key="0"><button onClick={() => this.handleClick(1)} className="link">Home</button></li>
+                <li className='item' key="1"><button onClick={() => this.handleClick(2)} className="link">Who I am</button></li>
+                <li className='item' key="2"><button onClick={() => this.handleClick(3)} className="link">Portfolio</button></li>
+                <li className='item' key="3"><button onClick={() => this.handleClick(4)} className="link">Goals</button></li>
+                <li className='item' key="4"><button onClick={() => this.handleClick(5)} className="link">Contact</button></li>
             </Fragment>
         )
     }

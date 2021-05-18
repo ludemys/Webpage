@@ -12,23 +12,23 @@ class App extends Component
       <Router>
   
         <Route exact path="/" render={ () => {
-          return <Container content="index" title="Luciano Della Savia, software developer specialized on web" />
+          return <Container content="index" title="Luciano Della Savia | Software developer specialized on web" />
         } } />
   
         <Route path="/me" render={ () => {
-          return <Container content="me" title="Who is Luciano. About me" />
+          return <Container content="me" title="Who is Luciano | About me" />
         } } />
   
         <Route path="/portfolio" render={ () => {
-          return <Container content="portfolio" title="Luciano's portfolio, my repository of project on GitHub" />
+          return <Container content="portfolio" title="Luciano's portfolio | My repository of projects on GitHub" />
         } } />
   
         <Route path="/goals" render={ () => {
-          return <Container content="goals" title="Luciano's goals, my future view" />
+          return <Container content="goals" title="Luciano's goals | My future view" />
         } } />
   
         <Route path="/contact" render={ () => {
-          return <Container content="contact" title="How to contact Luciano" />
+          return <Container content="contact" title="Contact me | Luciano" />
         } } />
   
       </Router>

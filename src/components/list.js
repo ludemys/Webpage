@@ -13,7 +13,7 @@ class List extends Component
         switch (this.props.render) {
             case 'navbar':
                 return (
-                    <ul className="list">
+                    <ul className={`list ${this.props.class ? this.props.class : ''}`}>
                         {this.state.title ? <li className="list-header">{this.state.title}</li> : ''}
                         <NavItems />
                     </ul>
@@ -23,22 +23,22 @@ class List extends Component
                     <ul className="list">
                         {this.state.title ? <li className="list-header">{this.state.title}</li> : ''}
                         <li className="item" key="0">
-                            <a className="link image-link" target="_blank" href="https://www.github.com/ludemys">
-                                <img className="footer-logo" src="./assets/github.png"/>
+                            <a className="link image-link" target="_blank" rel="noreferrer" href="https://www.github.com/ludemys">
+                                <img className="footer-logo" src="./assets/github.png" alt="github logo" />
                                 Github
                             </a>
                         </li>
 
                         <li className="item" key="1">
-                            <a className="link image-link" target="_blank" href="https://www.linkedin.com/in/lucianodellasavia">
-                                <img className="footer-logo" src="https://image.flaticon.com/icons/png/512/174/174857.png"/>
+                            <a className="link image-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lucianodellasavia">
+                                <img className="footer-logo" src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linkedin logo" />
                                 LinkedIn
                             </a>
                         </li>
                         
                         <li className="item" key="2">
-                            <a className="link image-link" target="_blank" href="https://www.twitter.com/ludemys">
-                                <img className="footer-logo" src="./assets/twitter.png"/>
+                            <a className="link image-link" target="_blank" rel="noreferrer" href="https://www.twitter.com/ludemys">
+                                <img className="footer-logo" src="./assets/twitter.png" alt="twitter logo" />
                                 Twitter
                             </a>
                         </li>
@@ -53,8 +53,8 @@ class List extends Component
                         {this.props.items.map((i, index) => {
                             return (
                                 <li key={index}>
-                                    <a target="_blank" className="inline-link" href={i.href}>
-                                        {i.imageSrc ? <img className="inline-image-logo" src={i.imageSrc} /> : ''}
+                                    <a target="_blank" rel="noreferrer" className="inline-link" href={i.href}>
+                                        {i.imageSrc ? <img className="inline-image-logo" src={i.imageSrc} alt={i.alt} /> : ''}
                                         {i.text}
                                     </a>
                                 </li>
